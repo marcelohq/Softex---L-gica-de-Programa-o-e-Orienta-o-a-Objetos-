@@ -1,1 +1,1 @@
-# Softex---L-gica-de-Programa-o-e-Orienta-o-a-Objetos-
+# Softex Lógica de Programação e Orientação a Objetos
