@@ -4,6 +4,9 @@ programa
 	funcao inicio()
 	{
 		cadeia resposta
+
+		escreva("Escolha um desses veículos: Trator - Moto - Bicicleta - Trem - Carro - Caminhão - Ônibus\n")
+		escreva("Paraquedas - Balão - Avião- Helicóptero - Submarino - Barco - Navio - Lancha\n\n")
 		
 		escreva("O tipo de veículo é terrestre? ")
 		leia(resposta)
@@ -231,7 +234,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3742; 
+ * @POSICAO-CURSOR = 247; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {resposta, 6, 9, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
