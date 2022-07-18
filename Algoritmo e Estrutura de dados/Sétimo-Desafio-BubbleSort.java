@@ -7,7 +7,7 @@ public class BubbleSort {
         
         Scanner ler = new Scanner(System.in);
         int auxiliar;
-        int vetor[] = new int[5];
+        int vetor[] = new int[10];
         
         for(int i = 0; i < vetor.length; i++){
 
