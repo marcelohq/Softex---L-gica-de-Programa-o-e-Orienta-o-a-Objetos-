@@ -12,3 +12,5 @@ elif quantidadeRodas >=4 and quantidadePessoas >=8:
     print("Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas;")
 elif quantidadeRodas >=4 and peso >6000:
     print("Veículos com quatro rodas ou mais e com mais de 6000 kg")
+else:
+    print("Características não encontradas.")
