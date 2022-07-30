@@ -29,21 +29,23 @@ dataframe = pd.read_csv("notas_alunos.csv")
 
 #Linha que tira a média das notas dos alunos e adiciona em uma coluna chamada medita_notas.
 
-dataframe["media_notas"] = (dataframe["notas_1"] +dataframe["notas_2"]) / 2
+media = (dataframe["nota_1"] + dataframe["nota_2"]) / 2
+dataframe["media_notas"] = media
 
-#Criando coluna 'situação'
-
-dataframe["situacao"]
 
 #Adicionando alunos aprovados e reprovadas na coluna "situacao"
 
-dataframe.loc[dataframe["faltas"] > 5 or dataframe["media"] <7, "situacao"] = "Reprovado"
-dataframe.loc[dataframe["faltas"] <=5 and dataframe["media"] >=7, "situacao"] = "Aprovado"
+dataframe.loc[(dataframe["faltas"] > 5) | (dataframe["media_notas"] < 7), "situacao"] = "Reprovado"
+dataframe.loc[(dataframe["faltas"] <= 5) & (dataframe["media_notas"] >= 7), "situacao"] = "Aprovado"
+
+print(dataframe)
 
 #Resumo de quem teve mais falta, tirou maior média e média total da turma.
-print("Maior quantidade de faltas: ",maisFalta = dataframe["faltas"].max())
-print("Maior média: ",maiorMedia = dataframe["media_notas"].max())
-print("Média da turma: ",mediaGeral = dataframe["media_notas"].median())
+print("Maior quantidade de faltas: "+str(dataframe["faltas"].max()))
+print("Maior média: "+str(dataframe["media_notas"].max()))
+print("Média da turma: "+str(dataframe["media_notas"].mean()))
+
+dataframe.to_csv("alunos_situacao.csv")
 
 
 
