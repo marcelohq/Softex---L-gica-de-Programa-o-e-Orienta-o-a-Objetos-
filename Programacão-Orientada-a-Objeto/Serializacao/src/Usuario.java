@@ -13,6 +13,7 @@ public class Usuario implements Serializable {
         this.id = id;
     }
 
+    //Métodos gets e sets
     public String getNome(){
         return this.nome;
     }
