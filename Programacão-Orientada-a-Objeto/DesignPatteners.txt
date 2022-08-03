@@ -1,0 +1,44 @@
+Padrão Composite
+
+O composite faz parte do grupo dos padrões estruturais. Os padrões estruturais se preocupam com a forma de
+como os objetos se organizam para criar estruturas mais complexas. 
+O composite, também conhecido como "Arvore de Objetos", tenciona compor objetos em estruturas de árvore para 
+representar hierarquias. Depois dessa composição, essas estruturas são trabalhadas como se fossem objetos individuais.
+
+Características:
+
+	- Faz parte da categoria estrutural.
+	- É utilizada em estruturas que podem ser tratadas hierarquicamente (Objetos que se extendem para objetos filhos e assim sucessivamente)
+	- É um solução consegue tratar estruturas complexas de maneira uniforme.
+
+Levando em consideração a estrutura de árvore, no composite, nós internos ( aqueles que tem filhos)
+são objetos "Composite"(container). Os nós externos ( aqueles que não tem filhos) são objetos "Leaf"(folha).
+
+"O padrão Composite fornece a você com dois tipos básicos de elementos que 
+compartilham uma interface comum: folhas simples e contêineres complexos.
+Um contêiner pode ser composto tanto de folhas como por outros contêineres. 
+Isso permite a você construir uma estrutura de objetos recursiva aninhada que 
+se assemelha a uma árvore."
+
+Exemplo: Em um mercado você pode pegar um refrigerante e passar ele no caixa de maneira individual, 
+ou você pode pegar um fardo de refrigerente que contém diversos refrigerens e passar ele no caixa como um produto único.
+O produto único seria a folha simples, o fardo seria o contêiner complexo. 
+
+
+O que é bom ou ruim no Composite:
+
+Bom:
+
+    - É muito fácil criar objetos complexos por composição
+    - É fácil gerar uma hierarquia de objetos
+    - É fácil usar polimorfismo e recursão
+    - É fácil adicionar novos tipos de elementos na estrutura (OCP)
+Ruim:
+
+    - Dependendo da estrutura, pode quebrar o princípio da segregação de interface (ISP). 
+    - Objetos do tipo "Leaf" (folha) tendem a ter métodos que não usam ou não fazem nada
+
+
+
+
+
