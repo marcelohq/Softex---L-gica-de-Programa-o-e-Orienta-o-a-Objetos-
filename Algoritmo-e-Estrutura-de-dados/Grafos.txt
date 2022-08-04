@@ -1,0 +1,19 @@
+Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+
+B A N C O S   D E   D A D O S
+
+Os bancos de dados de grafos usam nós para armazenar entidades de dados e arestas para armazenar os 
+relacionamentos entre as entidades. Uma aresta tem sempre um nó inicial, um nó final, um tipo e um direcionamento, 
+o que possibilita a descrição dos relacionamentos entre pais e filhos, das ações, das propriedades e assim por diante.
+A quantidade e os tipos de relacionamentos que um nó pode ter são ilimitados.
+
+
+R E D E S   N E U R A I S   P A R A   G R A F O S
+
+Redes Neurais para Grafos são arquiteturas de Redes Neurais Profundas que recebem como entrada um grafo. 
+Elas são utilizadas para classificação ou geração de grafos, arestas e vértices, reconhecimento de padrões em grafos,
+agrupamento por semelhança de estruturas que podem ser representadas em grafos. 
+Podem ter diversas aplicações, desde a composição e classificação de estruturas moleculares, 
+até o reconhecimento de padrões em redes sociais.
+
