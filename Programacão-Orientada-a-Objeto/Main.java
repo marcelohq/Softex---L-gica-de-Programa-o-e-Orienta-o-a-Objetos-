@@ -19,8 +19,9 @@ public class Main {
         String nomeMaisculo = nome.toUpperCase();
         //Método que informa o caracter de acordo com o indice informado
         char primeiraLetra = nome.charAt(0);
-        //Método que retorna o número de carateres de uma string
-        int quantidadeLetras = nome.length();
+        //Método raplece que neste caso está substituindo o espaço por nada e que 
+        //retorna o número de carateres de uma string.
+        int quantidadeLetras = nome.replace(" ","").length();
         
         //Saída dos dados
         System.out.println("Nome: "+nomeMaisculo);
